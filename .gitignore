@@ -1,0 +1,93 @@
+# Python/cache
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# C build products and local executables
+obj/
+*.o
+*.d
+/ising_static
+/ising_quench
+/ising_lanczos
+/ising_spectral
+/ising_hfield
+/ising_gh_surface
+/ising_chiz_fd
+
+# Logs, runtime markers, locks, temporary work dirs
+logs/
+*.log
+nohup.out
+*.pid
+*.tmp
+*.lock
+*.ckpt
+*.out
+.locks/
+.work/
+work/
+*/.locks/
+*/.work/
+
+# Local IDE/agent metadata
+.vscode/
+.codex/
+.agents/
+
+# Debug, smoke-test and historical scratch outputs
+data/debug/
+plots/debug/
+trash_review*/
+repo_*.txt
+
+# Heavy or restartable intermediate data
+data/spectral/raw/.locks/
+data/spectral/work/
+data/spectral/**/.partial_downloads_*/
+data/h_field/hfield_raw/.locks/
+data/h_field/*/.work/
+data/h_field/gh_surface/work/
+data/quench/matplotlib_cache/
+
+# Backups, snapshots and archives
+data/**/backups/
+plots/**/backups/
+docs/spectral/*snapshot*/
+docs/spectral/*legacy*/
+*backup*
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Generated numerical data and plots: not versioned in the public code repository
+data/**/*.dat
+data/**/*.txt
+data/**/*.json
+data/**/*.csv
+data/**/*.npy
+data/**/*.npz
+
+plots/**/*.pdf
+plots/**/*.png
+plots/**/*.jpg
+plots/**/*.jpeg
+plots/**/*.gif
+plots/**/*.mp4
+
+# Curated README assets are versioned; generated plots elsewhere are not.
+!plots/readme/
+!plots/readme/**
+
+# Keep directory skeletons
+!data/**/.gitkeep
+!data/**/README.md
+!plots/**/.gitkeep
+!plots/**/README.md

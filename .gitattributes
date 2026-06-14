@@ -1,0 +1,13 @@
+* text=auto
+*.dat binary
+*.npy binary
+*.npz binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.zip binary
+*.tar binary
+*.gz binary
